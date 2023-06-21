@@ -294,6 +294,11 @@ body {
 
 @media (hover:hover) and (pointer:fine) {
 
+  .navbar-brand:hover {
+    border-radius: 10px;
+    outline: 2px solid #fff;
+  }
+
   .navbar-button:hover {
     background-color: transparent;
     border: 2px solid #fff;
@@ -308,11 +313,15 @@ body {
 
   .learn-more-link:hover {
     background-color: #fe7867;
+    border-radius: 10px;
     color: #000;
   }
 
+  .footer-icon:hover,
   .footer-link:hover {
-    color: #fff;
+    border-radius: 10px;
+    color: #275350;
+    outline: 2px solid #275350;
   }
 
 }
