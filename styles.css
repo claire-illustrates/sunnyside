@@ -450,16 +450,12 @@ body {
     order: 6;
   }
 
-  #testimonials-header {
+   .testimonials-section {
     order: 7;
   }
 
-  #testimonials-block {
-    order: 8;
-  }
-
   #gallery-block {
-    order: 9;
+    order: 8;
   }
 
   .grid-text-div {
@@ -487,6 +483,7 @@ body {
   }
 
   /* Testimonials */
+
 
   .testimonials-heading {
     margin: 15% auto;
