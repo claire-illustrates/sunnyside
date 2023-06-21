@@ -30,3 +30,4 @@ I used this challenge to work on my core skills, particualrly layout and respons
 - Flexbox
 - Bootstrap
 - ARIA
+- Axe Dev Tools (Accessibility Testing)
