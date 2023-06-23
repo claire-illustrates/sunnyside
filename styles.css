@@ -197,7 +197,8 @@ body {
 }
 
 .learn-more-link:focus {
-  outline: 4px solid #fe7867;
+  border-radius: 5px;
+  outline: 3px solid #fe7867;
 }
 
 .link-underline {
