@@ -312,8 +312,8 @@ body {
   }
 
   .learn-more-link:hover {
-    background-color: #fe7867;
-    border-radius: 10px;
+    background: #fad400;
+    border-radius: 5px;
     color: #000;
   }
 
