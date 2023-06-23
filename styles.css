@@ -198,6 +198,7 @@ body {
 
 .learn-more-link:focus {
   border-radius: 5px;
+  color: #000;
   outline: 3px solid #fe7867;
 }
 
