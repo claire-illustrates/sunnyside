@@ -601,6 +601,10 @@ body {
     margin-bottom: 5%;
   }
 
+  .nav-item:active {
+    outline: 2px solid #6FCFFF;
+  }
+  
   /* Grid */
 
   .grid-text-div {
