@@ -3,16 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <meta name="description"
-    content="Sunnyside marketing agency providing branding, graphic design, photography, and more">
-  <meta name="keywords"
-    content="marketing, branding, creatives, agency, photography, graphic design, design, content, visuals, projects">
-  <meta name="author" content="Claire Browne">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Sunnyside agency landing page Frontend Mentor</title>
 
   <!-- Google Fonts -->
 
@@ -21,212 +13,208 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
 
-  <!-- Bootstrap   -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-  <!-- Font Awesome -->
-
-  <script src="https://kit.fontawesome.com/9c76048cd3.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="styles.css">
+  <title>Sunnyside Agency</title>
 
 </head>
 
 <body>
 
-  <!-- Skip Link -->
+  <div class="hero-section">
 
-  <a href="#main" class="skip-link">
-    Skip to main content
-  </a>
+    <header class="header" role="banner">
 
-  <header class="hero-section" role="banner">
+      <a class="skiplink" href="#maincontent">Skip to main content</a>
 
-    <nav class="navbar navbar-expand-lg navbar-default" role="navigation">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/logo-white.svg"
-            alt="Sunnyside, go to the home page."></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-label="menu">
-          <i class="fa-solid fa-bars fa-xl"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav ms-auto" aria-label="navigation">
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <button class="btn navbar-button" type="button">CONTACT</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
+      <div class="top-bar">
+        <a class="logo" href="/">
+          <img src="images/logo-white.svg" alt="Sunnyside Agency, go to the home page.">
+        </a>
 
+        <div class="js-hamburger-menu">
 
-  <div class="container-fluid">
+          <button class="js-menu-button" aria-expanded="false" aria-label="Menu">
+            <svg class="svg" role="presentation" xmlns="http://www.w3.org/2000/svg" height="1em"
+              viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+            </svg>
+            <span class="button-text">Menu</span>
+          </button>
 
-    <main id="main" class="row d-flex" role="main">
-
-      <h1 class="screen-reader-text">We are Creatives</h1>
-
-      <!-- Image Grid -->
-
-      <div class="col-lg-6 grid-text-div d-flex" id="transform">
-        <div class="grid-text d-flex flex-column align-items-start justify-content-center">
-          <h2 class="grid-sub-heading">Transform your brand</h2>
-          <p class="grid-body-text">We are a full-service creative agency specializing in helping brands grow fast.
-            Engage your clients through compelling visuals that do most of the marketing for you.</p>
-          <a class="learn-more-link" href="#">LEARN MORE</a>
-          <div class="link-underline yellow"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 grid-image-div" id="egg">
-        <img class="grid-images images-desktop" src="images/desktop/image-transform.jpg" alt="">
-        <img class="grid-images images-mobile" src="images/mobile/image-transform.jpg" alt="">
-      </div>
-
-      <div class="col-lg-6 grid-image-div" id="glass">
-        <img class="grid-images images-desktop" src="images/desktop/image-stand-out.jpg" alt="">
-        <img class="grid-images images-mobile" src="images/mobile/image-stand-out.jpg" alt="">
-      </div>
-
-      <div class="col-lg-6 grid-text-div d-flex" id="standout">
-        <div class="grid-text d-flex flex-column align-items-start justify-content-center">
-          <h2 class="grid-sub-heading">Stand out to the right audience</h2>
-          <p class="grid-body-text">Using a collaborative formula of designers, researchers, photographers,
-            videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-          <a class="learn-more-link" href="#">LEARN MORE</a>
-          <div class="link-underline red"></div>
-        </div>
-      </div>
-
-      <div class="col-lg-6 grid-graphic-design" id="graphic-design">
-        <img src="images/desktop/image-graphic-design.jpg" alt="" class="grid-images images-desktop">
-        <img src="images/mobile/image-graphic-design.jpg" alt="" class="grid-images images-mobile">
-        <div class="grid-text-overlay">
-          <h2 class="grid-text-overlay-heading graphic-design">Graphic Design</h2>
-          <p class="grid-text-overlay-body graphic-design">Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients' attention.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6 grid-photography" id="photography">
-        <img src="images/desktop/image-photography.jpg" alt="" class="grid-images images-desktop">
-        <img src="images/mobile/image-photography.jpg" alt="" class="grid-images images-mobile">
-        <div class="grid-text-overlay">
-          <h2 class="grid-text-overlay-heading photography">Photography</h2>
-          <p class="grid-text-overlay-body photography">Increase your credibility by getting the most stunning,
-            high-quality photos that improve your business image.</p>
-        </div>
-      </div>
-
-      <!-- Testimonials -->
-      <section class="testimonials-section" aria-labelledby="testimonials-heading">
-        <div class="col-lg-12" id="testimonials-header">
-          <h2 id="testimonials-heading" class="testimonials-heading">CLIENT TESTIMONIALS</h2>
+          <nav class="menu js-navigation" aria-hidden="true" aria-label="main">
+            <ul class="sub-menu">
+              <li><a class="nav-link" href="/">About</a></li>
+              <li><a class="nav-link" href="/">Services</a></li>
+              <li><a class="nav-link" href="/">Projects</a></li>
+              <li><a class="nav-link contact" href="/">CONTACT</a></li>
+            </ul>
+          </nav>
         </div>
 
-
-        <div class="col-lg-12 align-items-center" id="testimonials-block">
-
-          <div class="row justify-content-around">
-
-            <div class="col-lg-4 client-block d-flex flex-column align-items-center">
-              <img class="client-image" src="images/image-emily.jpg" alt="">
-              <p class="client-quote">We put our trust in Sunnyside and they delivered, making sure our needs were met
-                and
-                deadlines were always hit.</p>
-              <p class="client-name">Emily R.</p>
-              <p class="client-title">Marketing Director</p>
-            </div>
-
-            <div class="col-lg-4 client-block d-flex flex-column align-items-center">
-              <img class="client-image" src="images/image-thomas.jpg" alt="">
-              <p class="client-quote">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success
-                made
-                it a satisfying and enjoyable experience.</p>
-              <p class="client-name">Thomas S.</p>
-              <p class="client-title">Chief Operating Officer</p>
-            </div>
-
-            <div class="col-lg-4 client-block d-flex flex-column align-items-center">
-              <img class="client-image" src="images/image-jennie.jpg" alt="">
-              <p class="client-quote">Incredible end result! Our sales increased over 400% when we worked with
-                Sunnyside.
-                Highly recommended!</p>
-              <p class="client-name">Jennie F.</p>
-              <p class="client-title">Business Owner</p>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Image Gallery -->
-
-      <div class="col-lg-12 gallery d-flex" id="gallery-block">
-
-        <img class="gallery-images images-desktop" src="images/desktop/image-gallery-milkbottles.jpg" alt="">
-        <img class="gallery-images images-mobile" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
-
-
-        <img class="gallery-images images-desktop" src="images/desktop/image-gallery-orange.jpg" alt="">
-        <img class="gallery-images images-mobile" src="images/mobile/image-gallery-orange.jpg" alt="">
-
-
-        <img class="gallery-images images-desktop" src="images/desktop/image-gallery-cone.jpg" alt="">
-        <img class="gallery-images images-mobile" src="images/mobile/image-gallery-cone.jpg" alt="">
-
-
-        <img class="gallery-images images-desktop" src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
-        <img class="gallery-images images-mobile" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
-
-      </div>
-    </main>
-
-    <!-- Footer -->
-
-    <footer class="row footer d-flex flex-column justify-content-between align-items-center" role="contentinfo">
-
-      <div class="col-lg-12 d-flex justify-content-center">
-        <img class="logo" src="images/logo-green.svg" alt="">
-      </div>
-
-      <div class="col-lg-12 links-div">
-        <div class="footer-links d-flex justify-content-around">
-          <a class="footer-link" href="#">About</a>
-          <a class="footer-link" href="#">Services</a>
-          <a class="footer-link" href="#">Projects</a>
-        </div>
       </div>
 
 
-      <div class="col-lg-12 icons-div d-flex justify-content-around">
-        <a class="footer-icon" href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
-        <a class="footer-icon" href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-        <a class="footer-icon" href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-        <a class="footer-icon" href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
-      </div>
 
-    </footer>
+
+      <h1 class="main-heading">WE ARE CREATIVES</h1>
+
+    </header>
 
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
-  </script>
+  <main id="maincontent">
 
+    <section class="grid" aria-label="about us">
+        <div class="transform" id="transform">
+          <div class="grid-text">
+            <h2 id="transform-heading" class="grid-heading">Transform your brand</h2>
+            <p class="grid-body">
+              We are a full-service creative agency specializing in helping brands
+              grow fast. Engage your clients through compelling visuals that do
+              most of the marketing for you.
+            </p>
+            <a id="learn-more-link-1" class="learn-more-link" href=""
+              aria-labelledby="transform-heading learn-more-link-1">LEARN MORE
+            </a>
+          </div>
+        </div>
+
+        <img src="images/desktop/image-transform.jpg" alt="" class="desktop-img">
+        <img src="images/mobile/image-transform.jpg" alt="" class="mobile-img" id="egg">
+
+        <img src="images/desktop/image-stand-out.jpg" alt="" class="desktop-img">
+        <img src="images/mobile/image-stand-out.jpg" alt="" class="mobile-img" id="glass">
+
+        <div class="stand-out" id="stand-out">
+          <div class="grid-text">
+            <h2 id="stand-out-heading" class="grid-heading">Stand out to the right audience</h2>
+            <p class="grid-body">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a id="learn-more-link-2" class="learn-more-link" href=""
+              aria-labelledby="stand-out-heading learn-more-link-2">LEARN MORE
+            </a>
+          </div>
+        </div>
+
+        <div class="graphic-design" id="graphic-design">
+          <img src="images/desktop/image-graphic-design.jpg" alt="" class="desktop-img">
+          <img src="images/mobile/image-graphic-design.jpg" alt="" class="mobile-img">
+          <div class="grid-text-overlay">
+            <h2>Graphic Design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients'
+              attention.
+            </p>
+          </div>
+        </div>
+
+        <div class="photography" id="photography">
+          <img src="images/desktop/image-photography.jpg" alt="" class="desktop-img">
+          <img src="images/mobile/image-photography.jpg" alt="" class="mobile-img">
+          <div class="grid-text-overlay">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning, high-quality
+              photos that improve your business image.
+            </p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" class="testimonials-heading">
+        CLIENT TESTIMONIALS
+      </h2>
+
+      <div class="testimonials-block" id="testimonials-block">
+        <div class="client-block">
+          <img class="client-image" src="images/image-emily.jpg" alt="">
+          <p class="client-quote">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <p class="client-name">Emily R.
+            <span class="client-title"> Marketing Director </span>
+          </p>
+        </div>
+
+        <div class="client-block">
+          <img class="client-image" src="images/image-thomas.jpg" alt="">
+          <p class="client-quote">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <p class="client-name">Thomas S.
+            <span class="client-title">Chief Operating Officer</span>
+          </p>
+        </div>
+
+        <div class="client-block">
+          <img class="client-image" src="images/image-jennie.jpg" alt="">
+          <p class="client-quote">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <p class="client-name">Jennie F.
+            <span class="client-title">Business Owner</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+
+    <div class="gallery" id="gallery-block">
+      <img class="gallery-img desktop-img" src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+      <img class="gallery-img mobile-img" src="images/mobile/image-gallery-milkbottles.jpg" alt="">
+
+      <img class="gallery-img desktop-img" src="images/desktop/image-gallery-orange.jpg" alt="">
+      <img class="gallery-img mobile-img" src="images/mobile/image-gallery-orange.jpg" alt="">
+
+      <img class="gallery-img desktop-img" src="images/desktop/image-gallery-cone.jpg" alt="">
+      <img class="gallery-img mobile-img" src="images/mobile/image-gallery-cone.jpg" alt="">
+
+      <img class="gallery-img desktop-img" src="images/desktop/image-gallery-sugarcubes.jpg" alt="">
+      <img class="gallery-img mobile-img" src="images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer" role="contentinfo">
+
+    <img class="footer-logo" src="images/logo-green.svg" alt="">
+
+    <div class="links-div">
+      <a class="footer-link" href="#">About</a>
+      <a class="footer-link" href="#">Services</a>
+      <a class="footer-link" href="#">Projects</a>
+    </div>
+
+    <div class="icons-div">
+      <a class="footer-icon" href="#"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+      <a class="footer-icon" href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
+      <a class="footer-icon" href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+      <a class="footer-icon" href="#"><img src="images/icon-pinterest.svg" alt="Pinterest"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
