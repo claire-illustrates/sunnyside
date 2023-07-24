@@ -28,6 +28,5 @@ I used this challenge to work on my core skills, particualrly layout and respons
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Bootstrap
 - ARIA
 - Axe Dev Tools (Accessibility Testing)
