@@ -43,6 +43,7 @@ button {
 .client-block,
 .footer,
 .header,
+.learn-more-link,
 .stand-out,
 .sub-menu,
 .transform {
@@ -224,29 +225,26 @@ button {
 }
 
 .learn-more-link {
+  position: relative;
   text-align: left;
   width: 35%;
+  z-index: 1;
 }
 
-.learn-more-link::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 60%;
+.link-underline {
   height: 10px;
-  transition: all .3s ease-in-out;
-  z-index: -1;
+  position: absolute;
+  top: 65%;
+  width: 60%;
+  z-index: 0;
 }
 
-#learn-more-link-1::before
- {
-  background-color: hsla(51, 100%, 49%, .5);
-  
-}
-
-#learn-more-link-2::before {
+.red {
   background-color: hsla(7, 99%, 70%, .5);
+}
+
+.yellow {
+  background-color: hsla(51, 100%, 49%, .5);
 }
 
 .learn-more-link:focus-visible {
@@ -552,11 +550,12 @@ button {
     font-size: 24px;
     font-size: 1.5rem;
     margin: auto;
+    text-align: center;
     width: 40%;
   }
 
-  .learn-more-link::before {
-    width: 75%;
+  .link-underline {
+    left: 15%;
   }
 
   /* Testimonials */
@@ -674,12 +673,12 @@ button {
     width: 40%;
   }
 
-  .learn-more-link::before {
-    width: 95%;
+  .link-underline {
+    left: 5%;
   }
 
   .link-underline {
-    width: 130px;
+    width: 95%;
   }
 
   .grid-text-overlay h2 {
@@ -735,10 +734,9 @@ button {
     border: 3px solid #000;
   }
 
-  .learn-more-link:hover::before {
-    border-bottom: 2px solid #000;
-    bottom: 0;
-    height: 100%;
+  .learn-more-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.15em;
   }
 
   .footer-icon:hover,
