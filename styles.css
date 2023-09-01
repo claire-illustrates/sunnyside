@@ -20,6 +20,14 @@ button {
   color: inherit;
 }
 
+picture {
+  width: 50%;
+}
+
+picture img {
+  width: 100%;
+}
+
 /* Flexbox */
 
 .client-block,
@@ -32,6 +40,7 @@ button {
 .links-div,
 .nav-link,
 .js-navigation,
+picture,
 .sub-menu,
 .stand-out,
 .testimonials-block,
@@ -194,14 +203,6 @@ button {
   flex-wrap: wrap;
 }
 
-.desktop-img {
-  width: 50%;
-}
-
-.mobile-img {
-  display: none;
-}
-
 .stand-out,
 .transform {
   justify-content: center;
@@ -239,6 +240,11 @@ button {
 .photography {
   position: relative;
   width: 50%;
+}
+
+.graphic-design picture,
+.photography picture {
+  width: 100%;
 }
 
 .graphic-design {
@@ -371,13 +377,8 @@ button {
 
 @media (max-width: 1100px) {
 
-  .desktop-img {
-    display: none;
-  }
-
-  .mobile-img {
-    display: block;
-    max-width: 100%;
+  picture {
+    width: 100%;
   }
 
   /* Flexbox */
@@ -396,7 +397,6 @@ button {
   }
 
   .client-block,
-  .desktop-img,
   .graphic-design,
   .grid-text-overlay,
   .photography,
@@ -561,8 +561,14 @@ button {
     width: 65%;
   }
 
+  /* Gallery  */
+
   .gallery {
     flex-wrap: wrap;
+  }
+
+  .gallery picture {
+    width: 50%;
   }
 
   /* Footer */
