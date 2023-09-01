@@ -6,8 +6,6 @@ const hamburgerMenu = document.querySelector(".js-hamburger-menu");
 const links = document.querySelectorAll(".learn-more-link");
 const redUnderline = document.querySelector(".red");
 const yellowUnderline = document.querySelector(".yellow");
-const arrowOne = document.querySelector("#arrow-1");
-const arrowTwo = document.querySelector("#arrow-2");
 
 const handleHamburgerClose = () => {
     navigation.style.display = "none";
