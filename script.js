@@ -2,7 +2,6 @@ const background = document.querySelector(".hero-section");
 const menuButton = document.querySelector(".js-menu-button");
 const navigation = document.querySelector(".js-navigation");
 const hamburgerMenu = document.querySelector(".js-hamburger-menu");
-// const subMenu = document.querySelector(".sub-menu");
 
 const links = document.querySelectorAll(".learn-more-link");
 const redUnderline = document.querySelector(".red");
