@@ -3,10 +3,6 @@ const menuButton = document.querySelector(".js-menu-button");
 const navigation = document.querySelector(".js-navigation");
 const hamburgerMenu = document.querySelector(".js-hamburger-menu");
 
-const links = document.querySelectorAll(".learn-more-link");
-const redUnderline = document.querySelector(".red");
-const yellowUnderline = document.querySelector(".yellow");
-
 const handleHamburgerClose = () => {
     navigation.style.display = "none";
     navigation.setAttribute("aria-hidden", true);
@@ -49,27 +45,6 @@ document.addEventListener("keydown", (event) => {
     if (event.key == "Escape") {
         collapseSubMenu();
     }
-});
-
-links.forEach((link) => {
-
-    link.addEventListener("focus", () => {
-        if (link.id === "learn-more-link-1") {
-            yellowUnderline.style.display = "none";
-        } else {
-            redUnderline.style.display = "none";
-        }
-    });
-
-    link.addEventListener("blur", () => {
-        if (link.id === "learn-more-link-1") {
-            yellowUnderline.style.display = "block";
-        } else {
-            redUnderline.style.display = "block";
-        }
-    });
-
-
 });
 
 // Focus Trap
