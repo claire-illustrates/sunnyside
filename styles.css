@@ -282,6 +282,7 @@ picture,
 
 .graphic-design picture,
 .photography picture {
+  aspect-ratio: auto;
   width: 100%;
 }
 
@@ -342,7 +343,6 @@ picture,
 .client-image {
   border-radius: 50%;
   margin-bottom: 10%;
-  width: 20%;
 }
 
 .client-quote {
@@ -365,8 +365,8 @@ picture,
 
 /* Image Gallery */
 
-.gallery-img {
-  width: 25%;
+.gallery picture {
+  aspect-ratio: 3/4;
 }
 
 /* Footer */
@@ -400,6 +400,7 @@ picture,
 }
 
 .footer-icon {
+  aspect-ratio: 1/1;
   display: block;
   padding: 10px;
   width: 8%;
@@ -606,6 +607,7 @@ picture,
   }
 
   .gallery picture {
+    aspect-ratio: 1/1;
     width: 50%;
   }
 
