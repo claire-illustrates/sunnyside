@@ -231,22 +231,6 @@ button {
   z-index: 1;
 }
 
-.link-underline {
-  height: 10px;
-  position: absolute;
-  top: 65%;
-  width: 60%;
-  z-index: 0;
-}
-
-.red {
-  background-color: hsla(7, 99%, 70%, .5);
-}
-
-.yellow {
-  background-color: hsla(51, 100%, 49%, .5);
-}
-
 .learn-more-link:focus-visible {
   outline: 2px solid #57576B;
 }
@@ -554,10 +538,6 @@ button {
     width: 40%;
   }
 
-  .link-underline {
-    left: 15%;
-  }
-
   /* Testimonials */
 
   .testimonials-section {
@@ -671,14 +651,6 @@ button {
   .learn-more-link {
     margin: auto;
     width: 40%;
-  }
-
-  .link-underline {
-    left: 5%;
-  }
-
-  .link-underline {
-    width: 95%;
   }
 
   .grid-text-overlay h2 {
