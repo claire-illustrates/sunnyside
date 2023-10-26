@@ -25,6 +25,7 @@ picture {
 }
 
 picture img {
+  height: auto;
   width: 100%;
 }
 
